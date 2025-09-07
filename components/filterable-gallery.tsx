@@ -14,7 +14,7 @@ interface GalleryImage {
 interface FilterableGalleryProps {
   images: GalleryImage[]
   filters: string[]
-  defaultFilter?: string
+  defaultFilter?: "企画 (Projects)"
   columns?: number
   className?: string
   showCopyright?: boolean
