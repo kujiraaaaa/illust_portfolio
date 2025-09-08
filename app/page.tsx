@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 import { Twitter, Instagram, ExternalLink, X, ArrowUp } from "lucide-react"
 import { FilterableGallery } from "@/components/filterable-gallery"
+import { ContactForm } from "@/components/contact-form";
 
 const worksImages = [
   
@@ -280,35 +281,10 @@ export default function Home() {
       <section id="contact" className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#006bb8]">Contact</h2>
-
+          
           <Card className="max-w-2xl mx-auto">
             <CardContent className="p-8">
-              <form className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    Your Name
-                  </label>
-                  <Input id="name" placeholder="Enter your name" />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    Your Email
-                  </label>
-                  <Input id="email" type="email" placeholder="Enter your email" />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
-                    Message
-                  </label>
-                  <Textarea id="message" placeholder="Enter your message" rows={6} />
-                </div>
-
-                <Button type="submit" className="w-full">
-                  Submit
-                </Button>
-              </form>
+              <ContactForm />
             </CardContent>
           </Card>
         </div>
